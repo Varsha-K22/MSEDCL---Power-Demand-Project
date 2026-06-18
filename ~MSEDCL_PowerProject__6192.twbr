@@ -1,0 +1,2068 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0410.0924                               -->
+<workbook original-version='18.1' source-build='2026.1.1 (20261.26.0410.0924)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.DashboardRoundedCorners.true...DashboardRoundedCorners />
+    <_.fcp.IndividualControlFormatting.true...IndividualControlFormatting />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='MSEDCLpd_sql' inline='true' name='federated.01ugzb81teuozi18h2l0z02oniyp' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='MSEDCLpd_sql' name='textscan.01a98o31wffuj31fkbnja0hxp5tu'>
+            <connection class='textscan' directory='D:/AS-Home/MSEDCL' filename='MSEDCLpd_sql.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.01a98o31wffuj31fkbnja0hxp5tu' name='MSEDCLpd_sql.csv' table='[MSEDCLpd_sql#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='date' name='Date' ordinal='0' />
+            <column datatype='integer' name='Morning_Peak' ordinal='1' />
+            <column datatype='integer' name='Day_Peak' ordinal='2' />
+            <column datatype='integer' name='Evening_Peak' ordinal='3' />
+            <column datatype='integer' name='Maximum_Peak_of_Day' ordinal='4' />
+            <column datatype='integer' name='Daily_Average_Peak' ordinal='5' />
+            <column datatype='integer' name='Peak_Difference' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[MSEDCLpd_sql.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[MSEDCLpd_sql.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MSEDCLpd_sql.csv_C3CC550F63804244B465146CB54F9436]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Morning_Peak</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Morning_Peak]</local-name>
+            <parent-name>[MSEDCLpd_sql.csv]</parent-name>
+            <remote-alias>Morning_Peak</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MSEDCLpd_sql.csv_C3CC550F63804244B465146CB54F9436]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Day_Peak</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Day_Peak]</local-name>
+            <parent-name>[MSEDCLpd_sql.csv]</parent-name>
+            <remote-alias>Day_Peak</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MSEDCLpd_sql.csv_C3CC550F63804244B465146CB54F9436]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Evening_Peak</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Evening_Peak]</local-name>
+            <parent-name>[MSEDCLpd_sql.csv]</parent-name>
+            <remote-alias>Evening_Peak</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MSEDCLpd_sql.csv_C3CC550F63804244B465146CB54F9436]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Maximum_Peak_of_Day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Maximum_Peak_of_Day]</local-name>
+            <parent-name>[MSEDCLpd_sql.csv]</parent-name>
+            <remote-alias>Maximum_Peak_of_Day</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MSEDCLpd_sql.csv_C3CC550F63804244B465146CB54F9436]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Daily_Average_Peak</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Daily_Average_Peak]</local-name>
+            <parent-name>[MSEDCLpd_sql.csv]</parent-name>
+            <remote-alias>Daily_Average_Peak</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MSEDCLpd_sql.csv_C3CC550F63804244B465146CB54F9436]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Peak_Difference</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Peak_Difference]</local-name>
+            <parent-name>[MSEDCLpd_sql.csv]</parent-name>
+            <remote-alias>Peak_Difference</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MSEDCLpd_sql.csv_C3CC550F63804244B465146CB54F9436]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Max Peak Day' datatype='integer' name='[Calculation_1250432815050753]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='MAX([Maximum_Peak_of_Day])' />
+      </column>
+      <column caption='Peak Demand Date' datatype='date' name='[Calculation_1250432816594946]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='MIN(&#13;&#10;    IF [Maximum_Peak_of_Day] = { FIXED : MAX([Maximum_Peak_of_Day]) }&#13;&#10;THEN [Date]&#13;&#10;END&#13;&#10;)' />
+      </column>
+      <column caption='Total Days of Analyzed' datatype='integer' name='[Calculation_1250432818139139]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([Date])' />
+      </column>
+      <column caption='Season Filter' datatype='string' name='[Calculation_1250432833712132]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF MONTH([Date]) IN (3,4,5,6)&#13;&#10;THEN &quot;Summer&quot;&#13;&#10;ELSEIF MONTH([Date]) IN (7,8,9)&#13;&#10;THEN &quot;Monsoon&quot;&#13;&#10;ELSE &quot;Winter&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Day Type Filter' datatype='string' name='[Calculation_1250432834150405]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF DATEPART(&apos;weekday&apos;,[Date]) IN (1,7)&#13;&#10;THEN &quot;Weekend&quot;&#13;&#10;ELSE &quot;Weekday&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Month-Year' datatype='datetime' name='[Calculation_1460714758213632]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='DATETRUNC(&apos;month&apos;,[Date])' />
+      </column>
+      <column caption='Daily Average Peak' datatype='integer' name='[Daily_Average_Peak]' role='measure' type='quantitative' />
+      <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+      <column caption='Day Peak' datatype='integer' name='[Day_Peak]' role='dimension' type='quantitative' />
+      <column caption='Evening Peak' datatype='integer' name='[Evening_Peak]' role='measure' type='quantitative' />
+      <column caption='Maximum Peak of Day' datatype='integer' name='[Maximum_Peak_of_Day]' role='dimension' type='quantitative' />
+      <column caption='Morning Peak' datatype='integer' name='[Morning_Peak]' role='measure' type='quantitative' />
+      <column caption='Peak Difference' datatype='integer' name='[Peak_Difference]' role='measure' type='quantitative' />
+      <column caption='MSEDCLpd_sql.csv' datatype='table' name='[__tableau_internal_object_id__].[MSEDCLpd_sql.csv_C3CC550F63804244B465146CB54F9436]' role='measure' type='quantitative' />
+      <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/DELL/AppData/Local/Temp/TableauTemp/#TableauTemp_110nym90hgy4ve145m4qi0jdijor.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/16/2026 11:55:15 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>MSEDCLpd_sql.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>539</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[MSEDCLpd_sql.csv_C3CC550F63804244B465146CB54F9436]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Morning_Peak</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Morning_Peak]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Morning_Peak</remote-alias>
+              <ordinal>1</ordinal>
+              <family>MSEDCLpd_sql.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>522</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[MSEDCLpd_sql.csv_C3CC550F63804244B465146CB54F9436]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Day_Peak</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Day_Peak]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Day_Peak</remote-alias>
+              <ordinal>2</ordinal>
+              <family>MSEDCLpd_sql.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>509</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[MSEDCLpd_sql.csv_C3CC550F63804244B465146CB54F9436]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Evening_Peak</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Evening_Peak]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Evening_Peak</remote-alias>
+              <ordinal>3</ordinal>
+              <family>MSEDCLpd_sql.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>511</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[MSEDCLpd_sql.csv_C3CC550F63804244B465146CB54F9436]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Maximum_Peak_of_Day</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Maximum_Peak_of_Day]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Maximum_Peak_of_Day</remote-alias>
+              <ordinal>4</ordinal>
+              <family>MSEDCLpd_sql.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>514</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[MSEDCLpd_sql.csv_C3CC550F63804244B465146CB54F9436]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Daily_Average_Peak</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Daily_Average_Peak]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Daily_Average_Peak</remote-alias>
+              <ordinal>5</ordinal>
+              <family>MSEDCLpd_sql.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>521</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[MSEDCLpd_sql.csv_C3CC550F63804244B465146CB54F9436]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Peak_Difference</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Peak_Difference]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Peak_Difference</remote-alias>
+              <ordinal>6</ordinal>
+              <family>MSEDCLpd_sql.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>494</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[MSEDCLpd_sql.csv_C3CC550F63804244B465146CB54F9436]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[mn:Date:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>11</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>12</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>4</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='MSEDCLpd_sql.csv' id='MSEDCLpd_sql.csv_C3CC550F63804244B465146CB54F9436'>
+            <properties context=''>
+              <relation connection='textscan.01a98o31wffuj31fkbnja0hxp5tu' name='MSEDCLpd_sql.csv' table='[MSEDCLpd_sql#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='date' name='Date' ordinal='0' />
+                  <column datatype='integer' name='Morning_Peak' ordinal='1' />
+                  <column datatype='integer' name='Day_Peak' ordinal='2' />
+                  <column datatype='integer' name='Evening_Peak' ordinal='3' />
+                  <column datatype='integer' name='Maximum_Peak_of_Day' ordinal='4' />
+                  <column datatype='integer' name='Daily_Average_Peak' ordinal='5' />
+                  <column datatype='integer' name='Peak_Difference' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.01ugzb81teuozi18h2l0z02oniyp'>
+      <datasources>
+        <datasource caption='MSEDCLpd_sql' name='federated.01ugzb81teuozi18h2l0z02oniyp' />
+      </datasources>
+      <datasource-dependencies datasource='federated.01ugzb81teuozi18h2l0z02oniyp'>
+        <column caption='Season Filter' datatype='string' name='[Calculation_1250432833712132]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='IF MONTH([Date]) IN (3,4,5,6)&#13;&#10;THEN &quot;Summer&quot;&#13;&#10;ELSEIF MONTH([Date]) IN (7,8,9)&#13;&#10;THEN &quot;Monsoon&quot;&#13;&#10;ELSE &quot;Winter&quot;&#13;&#10;END' />
+        </column>
+        <column caption='Day Type Filter' datatype='string' name='[Calculation_1250432834150405]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='IF DATEPART(&apos;weekday&apos;,[Date]) IN (1,7)&#13;&#10;THEN &quot;Weekend&quot;&#13;&#10;ELSE &quot;Weekday&quot;&#13;&#10;END' />
+        </column>
+        <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+        <column caption='Maximum Peak of Day' datatype='integer' name='[Maximum_Peak_of_Day]' role='dimension' type='quantitative' />
+        <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+        <column-instance column='[Calculation_1250432833712132]' derivation='None' name='[none:Calculation_1250432833712132:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Calculation_1250432834150405]' derivation='None' name='[none:Calculation_1250432834150405:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Maximum_Peak_of_Day]' derivation='None' name='[none:Maximum_Peak_of_Day:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:ok]'>
+        <groupfilter function='level-members' level='[mn:Date:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432833712132:nk]'>
+        <groupfilter function='level-members' level='[none:Calculation_1250432833712132:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432834150405:nk]'>
+        <groupfilter function='level-members' level='[none:Calculation_1250432834150405:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='quantitative' column='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Maximum_Peak_of_Day:qk]' included-values='all' />
+      <filter class='categorical' column='[federated.01ugzb81teuozi18h2l0z02oniyp].[yr:Date:ok]'>
+        <groupfilter function='level-members' level='[yr:Date:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Average Peak by Month'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='14'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='MSEDCLpd_sql' name='federated.01ugzb81teuozi18h2l0z02oniyp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01ugzb81teuozi18h2l0z02oniyp'>
+            <column caption='Season Filter' datatype='string' name='[Calculation_1250432833712132]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF MONTH([Date]) IN (3,4,5,6)&#13;&#10;THEN &quot;Summer&quot;&#13;&#10;ELSEIF MONTH([Date]) IN (7,8,9)&#13;&#10;THEN &quot;Monsoon&quot;&#13;&#10;ELSE &quot;Winter&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Day Type Filter' datatype='string' name='[Calculation_1250432834150405]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF DATEPART(&apos;weekday&apos;,[Date]) IN (1,7)&#13;&#10;THEN &quot;Weekend&quot;&#13;&#10;ELSE &quot;Weekday&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Maximum Peak of Day' datatype='integer' name='[Maximum_Peak_of_Day]' role='dimension' type='quantitative' />
+            <column-instance column='[Maximum_Peak_of_Day]' derivation='Avg' name='[avg:Maximum_Peak_of_Day:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1250432833712132]' derivation='None' name='[none:Calculation_1250432833712132:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1250432834150405]' derivation='None' name='[none:Calculation_1250432834150405:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Maximum_Peak_of_Day]' derivation='None' name='[none:Maximum_Peak_of_Day:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.01ugzb81teuozi18h2l0z02oniyp].[avg:Maximum_Peak_of_Day:qk]' included-values='in-range' />
+          <filter class='quantitative' column='[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>12</max>
+          </filter>
+          <slices>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[avg:Maximum_Peak_of_Day:qk]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:qk]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:ok]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432833712132:nk]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432834150405:nk]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Maximum_Peak_of_Day:qk]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[yr:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[avg:Maximum_Peak_of_Day:qk]' value='#c8f2fc' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-color' value='#c8f2fc' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[avg:Maximum_Peak_of_Day:qk]' value='#366da7' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-size' value='11' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[avg:Maximum_Peak_of_Day:qk]' value='#ffffff' />
+            <format attr='font-weight' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[avg:Maximum_Peak_of_Day:qk]' value='bold' />
+            <format attr='color' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:ok]' value='#ffffff' />
+            <format attr='font-weight' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:ok]' value='bold' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#366da7' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#366da7' />
+            <format attr='border-width' value='4' />
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='background-color' value='#c8f2fc' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='3' />
+            <format attr='border-color' value='#366da7' />
+            <_.fcp.IndividualControlFormatting.true...format attr='background-color' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:ok]' id='legend-color' value='#e6e6e6' />
+            <_.fcp.IndividualControlFormatting.true...format attr='font-weight' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:ok]' id='legend-color' value='bold' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='text-align' value='left' />
+            <format attr='color' value='#000000' />
+            <_.fcp.IndividualControlFormatting.true...format attr='text-align' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:ok]' id='legend-color' value='center' />
+            <_.fcp.IndividualControlFormatting.true...format attr='font-weight' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:ok]' id='legend-color' value='bold' />
+            <_.fcp.IndividualControlFormatting.true...format attr='color' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:ok]' id='legend-color' value='#000000' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432833712132:nk]' value='Season Filter'>
+              <formatted-text>
+                <run bold='true' fontsize='12'>Season Filter</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:ok]' value='Month of Date'>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontsize='12'>Month of Date</run>
+              </formatted-text>
+            </format>
+            <_.fcp.IndividualControlFormatting.true...format attr='border-style' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432833712132:nk]' value='solid' />
+            <_.fcp.IndividualControlFormatting.true...format attr='border-width' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432833712132:nk]' value='3' />
+            <_.fcp.IndividualControlFormatting.true...format attr='border-color' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432833712132:nk]' value='#366da7' />
+            <_.fcp.IndividualControlFormatting.true...format attr='background-color' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432833712132:nk]' value='#e6e6e6' />
+            <_.fcp.IndividualControlFormatting.true...format attr='background-color' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:ok]' value='#e6e6e6' />
+            <_.fcp.IndividualControlFormatting.true...format attr='border-color' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:ok]' value='#366da7' />
+            <_.fcp.IndividualControlFormatting.true...format attr='border-style' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:ok]' value='solid' />
+            <_.fcp.IndividualControlFormatting.true...format attr='border-width' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:ok]' value='4' />
+            <_.fcp.IndividualControlFormatting.true...format attr='font-size' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432833712132:nk]' value='11' />
+            <_.fcp.IndividualControlFormatting.true...format attr='font-weight' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432833712132:nk]' value='bold' />
+            <_.fcp.IndividualControlFormatting.true...format attr='font-size' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:ok]' value='11' />
+            <_.fcp.IndividualControlFormatting.true...format attr='font-weight' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:ok]' value='bold' />
+          </style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='quick-filter-title'>
+            <_.fcp.IndividualControlFormatting.true...format attr='text-align' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432833712132:nk]' value='center' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.01ugzb81teuozi18h2l0z02oniyp].[avg:Maximum_Peak_of_Day:qk]</rows>
+        <cols>[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{6F3E7158-AD7E-46D7-8434-CDCE0967659A}' />
+    </worksheet>
+    <worksheet name='Daily Average Peak'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='14'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='MSEDCLpd_sql' name='federated.01ugzb81teuozi18h2l0z02oniyp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01ugzb81teuozi18h2l0z02oniyp'>
+            <column caption='Season Filter' datatype='string' name='[Calculation_1250432833712132]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF MONTH([Date]) IN (3,4,5,6)&#13;&#10;THEN &quot;Summer&quot;&#13;&#10;ELSEIF MONTH([Date]) IN (7,8,9)&#13;&#10;THEN &quot;Monsoon&quot;&#13;&#10;ELSE &quot;Winter&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Day Type Filter' datatype='string' name='[Calculation_1250432834150405]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF DATEPART(&apos;weekday&apos;,[Date]) IN (1,7)&#13;&#10;THEN &quot;Weekend&quot;&#13;&#10;ELSE &quot;Weekday&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Daily Average Peak' datatype='integer' name='[Daily_Average_Peak]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Maximum Peak of Day' datatype='integer' name='[Maximum_Peak_of_Day]' role='dimension' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1250432833712132]' derivation='None' name='[none:Calculation_1250432833712132:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1250432834150405]' derivation='None' name='[none:Calculation_1250432834150405:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Maximum_Peak_of_Day]' derivation='None' name='[none:Maximum_Peak_of_Day:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Daily_Average_Peak]' derivation='Sum' name='[sum:Daily_Average_Peak:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:ok]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432834150405:nk]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Maximum_Peak_of_Day:qk]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[yr:Date:ok]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432833712132:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='267' />
+            <format attr='height' value='65' />
+            <format attr='text-align' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[sum:Daily_Average_Peak:qk]' value='center' />
+            <format attr='font-size' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[sum:Daily_Average_Peak:qk]' value='11' />
+            <format attr='font-weight' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[sum:Daily_Average_Peak:qk]' value='bold' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#c8f2fc' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#e6e6e6' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#366da7' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.01ugzb81teuozi18h2l0z02oniyp].[sum:Daily_Average_Peak:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{4B0B5ABA-F028-4E2F-B635-B5E581222789}' />
+    </worksheet>
+    <worksheet name='Max Peak Day'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='14'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='MSEDCLpd_sql' name='federated.01ugzb81teuozi18h2l0z02oniyp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01ugzb81teuozi18h2l0z02oniyp'>
+            <column caption='Max Peak Day' datatype='integer' name='[Calculation_1250432815050753]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='MAX([Maximum_Peak_of_Day])' />
+            </column>
+            <column caption='Season Filter' datatype='string' name='[Calculation_1250432833712132]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF MONTH([Date]) IN (3,4,5,6)&#13;&#10;THEN &quot;Summer&quot;&#13;&#10;ELSEIF MONTH([Date]) IN (7,8,9)&#13;&#10;THEN &quot;Monsoon&quot;&#13;&#10;ELSE &quot;Winter&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Day Type Filter' datatype='string' name='[Calculation_1250432834150405]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF DATEPART(&apos;weekday&apos;,[Date]) IN (1,7)&#13;&#10;THEN &quot;Weekend&quot;&#13;&#10;ELSE &quot;Weekday&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Maximum Peak of Day' datatype='integer' name='[Maximum_Peak_of_Day]' role='dimension' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1250432833712132]' derivation='None' name='[none:Calculation_1250432833712132:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1250432834150405]' derivation='None' name='[none:Calculation_1250432834150405:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Maximum_Peak_of_Day]' derivation='None' name='[none:Maximum_Peak_of_Day:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1250432815050753]' derivation='User' name='[usr:Calculation_1250432815050753:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:ok]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432834150405:nk]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Maximum_Peak_of_Day:qk]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[yr:Date:ok]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432833712132:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='197' />
+            <format attr='text-align' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[usr:Calculation_1250432815050753:qk]' value='center' />
+            <format attr='font-size' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[usr:Calculation_1250432815050753:qk]' value='11' />
+            <format attr='font-weight' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[usr:Calculation_1250432815050753:qk]' value='bold' />
+            <format attr='height' value='63' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#c8f2fc' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#e6e6e6' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#366da7' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.01ugzb81teuozi18h2l0z02oniyp].[usr:Calculation_1250432815050753:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{9D9B3E5D-7032-4D73-A218-8AC2255EDBD6}' />
+    </worksheet>
+    <worksheet name='Morning vs Day vs Evening Peak'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='14'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='MSEDCLpd_sql' name='federated.01ugzb81teuozi18h2l0z02oniyp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01ugzb81teuozi18h2l0z02oniyp'>
+            <column caption='Season Filter' datatype='string' name='[Calculation_1250432833712132]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF MONTH([Date]) IN (3,4,5,6)&#13;&#10;THEN &quot;Summer&quot;&#13;&#10;ELSEIF MONTH([Date]) IN (7,8,9)&#13;&#10;THEN &quot;Monsoon&quot;&#13;&#10;ELSE &quot;Winter&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Day Type Filter' datatype='string' name='[Calculation_1250432834150405]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF DATEPART(&apos;weekday&apos;,[Date]) IN (1,7)&#13;&#10;THEN &quot;Weekend&quot;&#13;&#10;ELSE &quot;Weekday&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Day Peak' datatype='integer' name='[Day_Peak]' role='dimension' type='quantitative' />
+            <column caption='Evening Peak' datatype='integer' name='[Evening_Peak]' role='measure' type='quantitative' />
+            <column caption='Maximum Peak of Day' datatype='integer' name='[Maximum_Peak_of_Day]' role='dimension' type='quantitative' />
+            <column caption='Morning Peak' datatype='integer' name='[Morning_Peak]' role='measure' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1250432833712132]' derivation='None' name='[none:Calculation_1250432833712132:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1250432834150405]' derivation='None' name='[none:Calculation_1250432834150405:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Day_Peak]' derivation='None' name='[none:Day_Peak:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Maximum_Peak_of_Day]' derivation='None' name='[none:Maximum_Peak_of_Day:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Evening_Peak]' derivation='Sum' name='[sum:Evening_Peak:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Morning_Peak]' derivation='Sum' name='[sum:Morning_Peak:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>12</max>
+          </filter>
+          <filter class='quantitative' column='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Day_Peak:qk]' included-values='in-range' />
+          <filter class='quantitative' column='[federated.01ugzb81teuozi18h2l0z02oniyp].[sum:Evening_Peak:qk]' included-values='in-range' />
+          <slices>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Day_Peak:qk]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[sum:Evening_Peak:qk]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:qk]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:ok]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432834150405:nk]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Maximum_Peak_of_Day:qk]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[yr:Date:ok]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432833712132:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[sum:Morning_Peak:qk]' value='#e4f4fc' />
+            <format attr='background-color' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Day_Peak:qk]' value='#ffd321' />
+            <format attr='background-color' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[sum:Evening_Peak:qk]' value='#36479f' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='background-color' value='#366da7' />
+            <format attr='font-size' value='11' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[sum:Morning_Peak:qk]' value='bold' />
+            <format attr='color' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[sum:Morning_Peak:qk]' value='#000000' />
+            <format attr='font-weight' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Day_Peak:qk]' value='bold' />
+            <format attr='color' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Day_Peak:qk]' value='#000000' />
+            <format attr='color' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[sum:Evening_Peak:qk]' value='#ffffff' />
+            <format attr='font-weight' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[sum:Evening_Peak:qk]' value='normal' />
+            <format attr='color' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:ok]' value='#ffffff' />
+            <format attr='font-weight' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:ok]' value='bold' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#366da7' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#366da7' />
+            <format attr='border-width' value='4' />
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.01ugzb81teuozi18h2l0z02oniyp].[sum:Morning_Peak:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#c8f2fc' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Day_Peak:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#c8f2fc' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.01ugzb81teuozi18h2l0z02oniyp].[sum:Evening_Peak:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#c8f2fc' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.01ugzb81teuozi18h2l0z02oniyp].[sum:Morning_Peak:qk] + ([federated.01ugzb81teuozi18h2l0z02oniyp].[none:Day_Peak:qk] + [federated.01ugzb81teuozi18h2l0z02oniyp].[sum:Evening_Peak:qk]))</rows>
+        <cols>[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{EE4EDD2C-8C46-48BB-BF3F-DC4BA688D82D}' />
+    </worksheet>
+    <worksheet name='Peak Demand Date'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='14'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='MSEDCLpd_sql' name='federated.01ugzb81teuozi18h2l0z02oniyp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01ugzb81teuozi18h2l0z02oniyp'>
+            <column caption='Peak Demand Date' datatype='date' name='[Calculation_1250432816594946]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='MIN(&#13;&#10;    IF [Maximum_Peak_of_Day] = { FIXED : MAX([Maximum_Peak_of_Day]) }&#13;&#10;THEN [Date]&#13;&#10;END&#13;&#10;)' />
+            </column>
+            <column caption='Season Filter' datatype='string' name='[Calculation_1250432833712132]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF MONTH([Date]) IN (3,4,5,6)&#13;&#10;THEN &quot;Summer&quot;&#13;&#10;ELSEIF MONTH([Date]) IN (7,8,9)&#13;&#10;THEN &quot;Monsoon&quot;&#13;&#10;ELSE &quot;Winter&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Day Type Filter' datatype='string' name='[Calculation_1250432834150405]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF DATEPART(&apos;weekday&apos;,[Date]) IN (1,7)&#13;&#10;THEN &quot;Weekend&quot;&#13;&#10;ELSE &quot;Weekday&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Maximum Peak of Day' datatype='integer' name='[Maximum_Peak_of_Day]' role='dimension' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1250432833712132]' derivation='None' name='[none:Calculation_1250432833712132:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1250432834150405]' derivation='None' name='[none:Calculation_1250432834150405:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Maximum_Peak_of_Day]' derivation='None' name='[none:Maximum_Peak_of_Day:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1250432816594946]' derivation='User' name='[usr:Calculation_1250432816594946:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>12</max>
+          </filter>
+          <slices>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:qk]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:ok]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432834150405:nk]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Maximum_Peak_of_Day:qk]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[yr:Date:ok]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432833712132:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='295' />
+            <format attr='height' value='62' />
+            <format attr='text-align' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[usr:Calculation_1250432816594946:qk]' value='center' />
+            <format attr='font-size' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[usr:Calculation_1250432816594946:qk]' value='11' />
+            <format attr='font-weight' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[usr:Calculation_1250432816594946:qk]' value='bold' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#c8f2fc' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#e6e6e6' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#366da7' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.01ugzb81teuozi18h2l0z02oniyp].[usr:Calculation_1250432816594946:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{2A905958-220A-4368-ADB9-CD3F8A7D189D}' />
+    </worksheet>
+    <worksheet name='Peak Diff Chart'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='MSEDCLpd_sql' name='federated.01ugzb81teuozi18h2l0z02oniyp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01ugzb81teuozi18h2l0z02oniyp'>
+            <column caption='Season Filter' datatype='string' name='[Calculation_1250432833712132]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF MONTH([Date]) IN (3,4,5,6)&#13;&#10;THEN &quot;Summer&quot;&#13;&#10;ELSEIF MONTH([Date]) IN (7,8,9)&#13;&#10;THEN &quot;Monsoon&quot;&#13;&#10;ELSE &quot;Winter&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Day Type Filter' datatype='string' name='[Calculation_1250432834150405]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF DATEPART(&apos;weekday&apos;,[Date]) IN (1,7)&#13;&#10;THEN &quot;Weekend&quot;&#13;&#10;ELSE &quot;Weekday&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Maximum Peak of Day' datatype='integer' name='[Maximum_Peak_of_Day]' role='dimension' type='quantitative' />
+            <column caption='Peak Difference' datatype='integer' name='[Peak_Difference]' role='measure' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1250432833712132]' derivation='None' name='[none:Calculation_1250432833712132:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1250432834150405]' derivation='None' name='[none:Calculation_1250432834150405:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Maximum_Peak_of_Day]' derivation='None' name='[none:Maximum_Peak_of_Day:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Peak_Difference]' derivation='Sum' name='[sum:Peak_Difference:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>12</max>
+          </filter>
+          <slices>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:qk]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:ok]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432834150405:nk]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Maximum_Peak_of_Day:qk]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[yr:Date:ok]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432833712132:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.01ugzb81teuozi18h2l0z02oniyp].[sum:Peak_Difference:qk]</rows>
+        <cols>[federated.01ugzb81teuozi18h2l0z02oniyp].[yr:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{56A69182-BA78-4F49-8E0D-737DCE38B1AD}' />
+    </worksheet>
+    <worksheet name='Peak Difference'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='14'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='MSEDCLpd_sql' name='federated.01ugzb81teuozi18h2l0z02oniyp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01ugzb81teuozi18h2l0z02oniyp'>
+            <column caption='Season Filter' datatype='string' name='[Calculation_1250432833712132]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF MONTH([Date]) IN (3,4,5,6)&#13;&#10;THEN &quot;Summer&quot;&#13;&#10;ELSEIF MONTH([Date]) IN (7,8,9)&#13;&#10;THEN &quot;Monsoon&quot;&#13;&#10;ELSE &quot;Winter&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Day Type Filter' datatype='string' name='[Calculation_1250432834150405]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF DATEPART(&apos;weekday&apos;,[Date]) IN (1,7)&#13;&#10;THEN &quot;Weekend&quot;&#13;&#10;ELSE &quot;Weekday&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Maximum Peak of Day' datatype='integer' name='[Maximum_Peak_of_Day]' role='dimension' type='quantitative' />
+            <column caption='Peak Difference' datatype='integer' name='[Peak_Difference]' role='measure' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1250432833712132]' derivation='None' name='[none:Calculation_1250432833712132:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1250432834150405]' derivation='None' name='[none:Calculation_1250432834150405:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Maximum_Peak_of_Day]' derivation='None' name='[none:Maximum_Peak_of_Day:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Peak_Difference]' derivation='Sum' name='[sum:Peak_Difference:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:ok]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432834150405:nk]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Maximum_Peak_of_Day:qk]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[yr:Date:ok]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432833712132:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='245' />
+            <format attr='height' value='64' />
+            <format attr='text-align' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[sum:Peak_Difference:qk]' value='center' />
+            <format attr='font-size' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[sum:Peak_Difference:qk]' value='11' />
+            <format attr='font-weight' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[sum:Peak_Difference:qk]' value='bold' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#c8f2fc' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#f5f5f5' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='4' />
+            <format attr='border-color' value='#366da7' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.01ugzb81teuozi18h2l0z02oniyp].[sum:Peak_Difference:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3FFCDDD8-E56E-4794-B37A-D4B43A621CF3}' />
+    </worksheet>
+    <worksheet name='Top 10 Peak Demand Days'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='14'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='MSEDCLpd_sql' name='federated.01ugzb81teuozi18h2l0z02oniyp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01ugzb81teuozi18h2l0z02oniyp'>
+            <column caption='Season Filter' datatype='string' name='[Calculation_1250432833712132]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF MONTH([Date]) IN (3,4,5,6)&#13;&#10;THEN &quot;Summer&quot;&#13;&#10;ELSEIF MONTH([Date]) IN (7,8,9)&#13;&#10;THEN &quot;Monsoon&quot;&#13;&#10;ELSE &quot;Winter&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Day Type Filter' datatype='string' name='[Calculation_1250432834150405]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF DATEPART(&apos;weekday&apos;,[Date]) IN (1,7)&#13;&#10;THEN &quot;Weekend&quot;&#13;&#10;ELSE &quot;Weekday&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Maximum Peak of Day' datatype='integer' name='[Maximum_Peak_of_Day]' role='dimension' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1250432833712132]' derivation='None' name='[none:Calculation_1250432833712132:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1250432834150405]' derivation='None' name='[none:Calculation_1250432834150405:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date]' derivation='None' name='[none:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Maximum_Peak_of_Day]' derivation='None' name='[none:Maximum_Peak_of_Day:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>12</max>
+          </filter>
+          <slices>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:qk]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:ok]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432834150405:nk]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Maximum_Peak_of_Day:qk]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[yr:Date:ok]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432833712132:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Date:ok]' value='27' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Date:ok]' value='#366da7' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Date:ok]' value='#ffffff' />
+            <format attr='font-weight' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Date:ok]' value='bold' />
+            <format attr='color' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Maximum_Peak_of_Day:qk]' value='#ffffff' />
+            <format attr='font-weight' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Maximum_Peak_of_Day:qk]' value='bold' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#366da7' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#366da7' />
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <_.fcp.IndividualControlFormatting.true...format attr='font-weight' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Date:ok]' value='bold' />
+            <_.fcp.IndividualControlFormatting.true...format attr='background-color' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Date:ok]' value='#e6e6e6' />
+            <_.fcp.IndividualControlFormatting.true...format attr='border-style' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Date:ok]' value='solid' />
+            <_.fcp.IndividualControlFormatting.true...format attr='border-width' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Date:ok]' value='4' />
+            <_.fcp.IndividualControlFormatting.true...format attr='border-color' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Date:ok]' value='#366da7' />
+            <_.fcp.IndividualControlFormatting.true...format attr='font-weight' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432834150405:nk]' value='bold' />
+            <_.fcp.IndividualControlFormatting.true...format attr='background-color' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432834150405:nk]' value='#f5f5f5' />
+            <_.fcp.IndividualControlFormatting.true...format attr='border-style' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432834150405:nk]' value='solid' />
+            <_.fcp.IndividualControlFormatting.true...format attr='border-width' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432834150405:nk]' value='3' />
+            <_.fcp.IndividualControlFormatting.true...format attr='border-color' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432834150405:nk]' value='#366da7' />
+            <format attr='font-size' value='10' />
+            <format attr='title' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432834150405:nk]' value='Day Type Filter'>
+              <formatted-text>
+                <run fontsize='12'>Day Type Filter</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <_.fcp.IndividualControlFormatting.true...format attr='text-align' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Date:ok]' value='center' />
+            <_.fcp.IndividualControlFormatting.true...format attr='text-align' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432834150405:nk]' value='center' />
+            <format attr='font-size' value='11' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#c8f2fc' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Date:ok]</rows>
+        <cols>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Maximum_Peak_of_Day:qk]</cols>
+        <show-full-range>
+          <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[Date]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{A591317A-B43C-46E1-980B-B8AC51B64361}' />
+    </worksheet>
+    <worksheet name='Total Days Analyzed'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='14'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='MSEDCLpd_sql' name='federated.01ugzb81teuozi18h2l0z02oniyp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01ugzb81teuozi18h2l0z02oniyp'>
+            <column caption='Total Days of Analyzed' datatype='integer' name='[Calculation_1250432818139139]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([Date])' />
+            </column>
+            <column caption='Season Filter' datatype='string' name='[Calculation_1250432833712132]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF MONTH([Date]) IN (3,4,5,6)&#13;&#10;THEN &quot;Summer&quot;&#13;&#10;ELSEIF MONTH([Date]) IN (7,8,9)&#13;&#10;THEN &quot;Monsoon&quot;&#13;&#10;ELSE &quot;Winter&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Day Type Filter' datatype='string' name='[Calculation_1250432834150405]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF DATEPART(&apos;weekday&apos;,[Date]) IN (1,7)&#13;&#10;THEN &quot;Weekend&quot;&#13;&#10;ELSE &quot;Weekday&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Maximum Peak of Day' datatype='integer' name='[Maximum_Peak_of_Day]' role='dimension' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1250432833712132]' derivation='None' name='[none:Calculation_1250432833712132:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1250432834150405]' derivation='None' name='[none:Calculation_1250432834150405:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Maximum_Peak_of_Day]' derivation='None' name='[none:Maximum_Peak_of_Day:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1250432818139139]' derivation='User' name='[usr:Calculation_1250432818139139:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:ok]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432834150405:nk]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Maximum_Peak_of_Day:qk]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[yr:Date:ok]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432833712132:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='284' />
+            <format attr='height' value='63' />
+            <format attr='text-align' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[usr:Calculation_1250432818139139:qk]' value='center' />
+            <format attr='font-size' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[usr:Calculation_1250432818139139:qk]' value='11' />
+            <format attr='font-weight' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[usr:Calculation_1250432818139139:qk]' value='bold' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#c8f2fc' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#e6e6e6' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#366da7' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.01ugzb81teuozi18h2l0z02oniyp].[usr:Calculation_1250432818139139:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{759E35FE-C45D-4DD7-9D1F-B21F2A81F270}' />
+    </worksheet>
+    <worksheet name='Trend Line'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='14'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='MSEDCLpd_sql' name='federated.01ugzb81teuozi18h2l0z02oniyp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01ugzb81teuozi18h2l0z02oniyp'>
+            <column caption='Season Filter' datatype='string' name='[Calculation_1250432833712132]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF MONTH([Date]) IN (3,4,5,6)&#13;&#10;THEN &quot;Summer&quot;&#13;&#10;ELSEIF MONTH([Date]) IN (7,8,9)&#13;&#10;THEN &quot;Monsoon&quot;&#13;&#10;ELSE &quot;Winter&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Day Type Filter' datatype='string' name='[Calculation_1250432834150405]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF DATEPART(&apos;weekday&apos;,[Date]) IN (1,7)&#13;&#10;THEN &quot;Weekend&quot;&#13;&#10;ELSE &quot;Weekday&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Maximum Peak of Day' datatype='integer' name='[Maximum_Peak_of_Day]' role='dimension' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1250432833712132]' derivation='None' name='[none:Calculation_1250432833712132:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1250432834150405]' derivation='None' name='[none:Calculation_1250432834150405:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Maximum_Peak_of_Day]' derivation='None' name='[none:Maximum_Peak_of_Day:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>12</max>
+          </filter>
+          <slices>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Maximum_Peak_of_Day:qk]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[yr:Date:ok]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432833712132:nk]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432834150405:nk]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:qk]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[yr:Date:ok]' value='306' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Maximum_Peak_of_Day:qk]' value='#366da7' />
+            <format attr='background-color' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[yr:Date:ok]' value='#366da7' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='10' />
+            <format attr='background-color' value='#366da7' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Maximum_Peak_of_Day:qk]' value='#ffffff' />
+            <format attr='font-weight' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Maximum_Peak_of_Day:qk]' value='bold' />
+            <format attr='color' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[yr:Date:ok]' value='#ffffff' />
+            <format attr='font-size' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[yr:Date:ok]' value='11' />
+            <format attr='font-weight' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[yr:Date:ok]' value='bold' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' data-class='subtotal' scope='cols' value='#c8f2fc' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#366da7' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='dotted' />
+            <format attr='stroke-color' value='#f28e2b' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#366da7' />
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Maximum_Peak_of_Day:qk]' value='Maximum Peak of Day'>
+              <formatted-text>
+                <run bold='true' fontsize='12'>Maximum Peak of Day</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[yr:Date:ok]' value='Year of Date'>
+              <formatted-text>
+                <run bold='true' fontsize='12'>Year of Date</run>
+              </formatted-text>
+            </format>
+            <_.fcp.IndividualControlFormatting.true...format attr='background-color' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Maximum_Peak_of_Day:qk]' value='#f5f5f5' />
+            <_.fcp.IndividualControlFormatting.true...format attr='border-style' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Maximum_Peak_of_Day:qk]' value='solid' />
+            <_.fcp.IndividualControlFormatting.true...format attr='border-width' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Maximum_Peak_of_Day:qk]' value='4' />
+            <_.fcp.IndividualControlFormatting.true...format attr='border-color' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Maximum_Peak_of_Day:qk]' value='#366da7' />
+            <_.fcp.IndividualControlFormatting.true...format attr='background-color' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[yr:Date:ok]' value='#f5f5f5' />
+            <_.fcp.IndividualControlFormatting.true...format attr='border-style' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[yr:Date:ok]' value='solid' />
+            <_.fcp.IndividualControlFormatting.true...format attr='border-width' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[yr:Date:ok]' value='4' />
+            <_.fcp.IndividualControlFormatting.true...format attr='border-color' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[yr:Date:ok]' value='#366da7' />
+            <_.fcp.IndividualControlFormatting.true...format attr='font-weight' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Maximum_Peak_of_Day:qk]' value='bold' />
+            <_.fcp.IndividualControlFormatting.true...format attr='font-weight' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[yr:Date:ok]' value='bold' />
+            <_.fcp.IndividualControlFormatting.true...format attr='font-size' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Maximum_Peak_of_Day:qk]' value='14' />
+            <_.fcp.IndividualControlFormatting.true...format attr='font-size' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[yr:Date:ok]' value='10' />
+          </style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='quick-filter-title'>
+            <_.fcp.IndividualControlFormatting.true...format attr='text-align' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Maximum_Peak_of_Day:qk]' value='center' />
+            <_.fcp.IndividualControlFormatting.true...format attr='text-align' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[yr:Date:ok]' value='center' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#c8f2fc' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='5' />
+                <format attr='stroke-color' value='#f28e2b3e' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Maximum_Peak_of_Day:qk]</rows>
+        <cols>[federated.01ugzb81teuozi18h2l0z02oniyp].[yr:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{B214F87C-3DB8-45D8-9500-095352DB92D7}' />
+    </worksheet>
+    <worksheet name='Year-wise Peak Demand'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='14'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='MSEDCLpd_sql' name='federated.01ugzb81teuozi18h2l0z02oniyp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01ugzb81teuozi18h2l0z02oniyp'>
+            <column caption='Season Filter' datatype='string' name='[Calculation_1250432833712132]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF MONTH([Date]) IN (3,4,5,6)&#13;&#10;THEN &quot;Summer&quot;&#13;&#10;ELSEIF MONTH([Date]) IN (7,8,9)&#13;&#10;THEN &quot;Monsoon&quot;&#13;&#10;ELSE &quot;Winter&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Day Type Filter' datatype='string' name='[Calculation_1250432834150405]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF DATEPART(&apos;weekday&apos;,[Date]) IN (1,7)&#13;&#10;THEN &quot;Weekend&quot;&#13;&#10;ELSE &quot;Weekday&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Maximum Peak of Day' datatype='integer' name='[Maximum_Peak_of_Day]' role='dimension' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1250432833712132]' derivation='None' name='[none:Calculation_1250432833712132:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1250432834150405]' derivation='None' name='[none:Calculation_1250432834150405:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date]' derivation='None' name='[none:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Maximum_Peak_of_Day]' derivation='None' name='[none:Maximum_Peak_of_Day:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>12</max>
+          </filter>
+          <filter class='quantitative' column='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Date:qk]' included-values='in-range'>
+            <min>#2024-04-01#</min>
+            <max>#2025-09-21#</max>
+          </filter>
+          <slices>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Date:qk]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:qk]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:ok]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432834150405:nk]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Maximum_Peak_of_Day:qk]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[yr:Date:ok]</column>
+            <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432833712132:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[yr:Date:ok]' value='#366da7' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-size' value='11' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#ffffff' />
+            <format attr='background-color' value='#366da7' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[yr:Date:ok]' value='#ffffff' />
+            <format attr='font-weight' field='[federated.01ugzb81teuozi18h2l0z02oniyp].[yr:Date:ok]' value='bold' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#366da7' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#366da7' />
+            <format attr='border-width' value='3' />
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='background-color' value='#f5f5f5' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='3' />
+            <format attr='border-color' value='#366da7' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#c8f2fc' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Maximum_Peak_of_Day:qk]</rows>
+        <cols>[federated.01ugzb81teuozi18h2l0z02oniyp].[yr:Date:ok]</cols>
+        <show-full-range>
+          <column>[federated.01ugzb81teuozi18h2l0z02oniyp].[Date]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{E312FFD9-210C-4A61-9CDD-93F08E127080}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Benton Sans Book' fontsize='16'>Maharashtra State Electricity Distribution Company Limited (MSEDCL) - Powewr </run>
+            <run bold='true'>Demand Project</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#555555' />
+        </style-rule>
+        <style-rule element='dash-title'>
+          <format attr='text-align' value='center' />
+          <format attr='background-color' value='#366da7' />
+          <format attr='border-style' value='solid' />
+          <format attr='color' value='#ffffff' />
+          <format attr='font-weight' value='normal' />
+          <format attr='border-width' value='4' />
+          <format attr='border-color' value='#c8f2fc' />
+        </style-rule>
+      </style>
+      <size maxheight='1160' maxwidth='1850' minheight='560' minwidth='420' sizing-mode='range' />
+      <datasources>
+        <datasource caption='MSEDCLpd_sql' name='federated.01ugzb81teuozi18h2l0z02oniyp' />
+      </datasources>
+      <datasource-dependencies datasource='federated.01ugzb81teuozi18h2l0z02oniyp'>
+        <column caption='Season Filter' datatype='string' name='[Calculation_1250432833712132]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='IF MONTH([Date]) IN (3,4,5,6)&#13;&#10;THEN &quot;Summer&quot;&#13;&#10;ELSEIF MONTH([Date]) IN (7,8,9)&#13;&#10;THEN &quot;Monsoon&quot;&#13;&#10;ELSE &quot;Winter&quot;&#13;&#10;END' />
+        </column>
+        <column caption='Day Type Filter' datatype='string' name='[Calculation_1250432834150405]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='IF DATEPART(&apos;weekday&apos;,[Date]) IN (1,7)&#13;&#10;THEN &quot;Weekend&quot;&#13;&#10;ELSE &quot;Weekday&quot;&#13;&#10;END' />
+        </column>
+        <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+        <column caption='Maximum Peak of Day' datatype='integer' name='[Maximum_Peak_of_Day]' role='dimension' type='quantitative' />
+        <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+        <column-instance column='[Calculation_1250432833712132]' derivation='None' name='[none:Calculation_1250432833712132:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Calculation_1250432834150405]' derivation='None' name='[none:Calculation_1250432834150405:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Maximum_Peak_of_Day]' derivation='None' name='[none:Maximum_Peak_of_Day:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='22' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97184' id='38' param='vert' type-v2='layout-flow' w='98552' x='724' y='1408'>
+            <zone h='5751' id='39' type-v2='title' w='98552' x='724' y='1408'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='91433' id='36' param='vert' type-v2='layout-flow' w='98552' x='724' y='7159'>
+              <zone h='91433' id='23' type-v2='layout-basic' w='98552' x='724' y='7159'>
+                <zone-style>
+                  <format attr='border-color' value='#366da7' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='5' />
+                  <format attr='background-color' value='#333333' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#c8f2fc' />
+            <format attr='border-style' value='dashed' />
+            <format attr='border-width' value='4' />
+            <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='1' />
+            <format attr='margin' value='8' />
+            <format attr='background-color' value='#f0f3fa' />
+          </zone-style>
+        </zone>
+        <zone h='12573' id='3' name='Max Peak Day' w='13591' x='1523' y='7051' />
+        <zone h='13161' id='4' name='Peak Demand Date' w='16403' x='29525' y='7521' />
+        <zone h='11868' id='5' name='Daily Average Peak' w='16169' x='13650' y='7286' />
+        <zone h='11868' id='6' name='Total Days Analyzed' w='18864' x='47335' y='7521' />
+        <zone h='38660' id='7' name='Trend Line' w='27651' x='1230' y='58049' />
+        <zone h='38073' id='8' name='Morning vs Day vs Evening Peak' w='33450' x='34622' y='19154' />
+        <zone h='39130' id='10' name='Top 10 Peak Demand Days' w='26252' x='29813' y='58167' />
+        <zone h='37838' id='12' name='Average Peak by Month' w='32806' x='1347' y='18919' />
+        <zone h='38543' id='13' name='Average Peak by Month' pane-specification-id='0' param='[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:ok]' type-v2='color' w='10662' x='69069' y='19624' />
+        <zone h='39248' id='14' name='Year-wise Peak Demand' w='23054' x='56669' y='58167' />
+        <zone h='12103' id='15' name='Peak Difference' w='15524' x='65612' y='7521' />
+        <zone h='15394' id='16' name='Trend Line' param='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Maximum_Peak_of_Day:qk]' type-v2='filter' values='relevant' w='17868' x='80551' y='20212' />
+        <zone h='14454' id='17' name='Trend Line' param='[federated.01ugzb81teuozi18h2l0z02oniyp].[yr:Date:ok]' type-v2='filter' values='database' w='17868' x='80492' y='35488' />
+        <zone h='33020' id='18' mode='radiolist' name='Average Peak by Month' param='[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:ok]' type-v2='filter' values='all' w='17750' x='80492' y='64982' />
+        <zone h='15511' id='19' name='Average Peak by Month' param='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432833712132:nk]' type-v2='filter' values='database' w='17809' x='80492' y='49589' />
+        <zone h='11986' id='43' mode='checkdropdown' name='Top 10 Peak Demand Days' param='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432834150405:nk]' type-v2='filter' values='database' w='18102' x='80434' y='8226' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontname='Benton Sans Book' fontsize='16'>Maharashtra State Electricity Distribution Company Limited (MSEDCL) - Powewr </run>
+                <run bold='true'>Demand Project</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='2650' minheight='2650' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='69' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98120' id='68' param='vert' type-v2='layout-flow' w='99034' x='483' y='940'>
+                <zone h='5758' id='39' type-v2='title' w='98552' x='724' y='1410'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='146' h='12573' id='3' is-fixed='true' name='Max Peak Day' w='13591' x='1523' y='7051'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='137' h='11868' id='5' is-fixed='true' name='Daily Average Peak' w='16169' x='13650' y='7286'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='153' h='13161' id='4' is-fixed='true' name='Peak Demand Date' w='16403' x='29525' y='7521'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='138' h='11868' id='6' is-fixed='true' name='Total Days Analyzed' w='18864' x='47335' y='7521'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='141' h='12103' id='15' is-fixed='true' name='Peak Difference' w='15524' x='65612' y='7521'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='33020' id='18' mode='dropdown' name='Average Peak by Month' param='[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:ok]' type-v2='filter' values='all' w='17750' x='80492' y='64982'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='15511' id='19' mode='checkdropdown' name='Average Peak by Month' param='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432833712132:nk]' type-v2='filter' values='database' w='17809' x='80492' y='49589'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37838' id='12' is-fixed='true' name='Average Peak by Month' w='32806' x='1347' y='18919'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='38543' id='13' name='Average Peak by Month' pane-specification-id='0' param='[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:ok]' type-v2='color' w='10662' x='69069' y='19624'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38073' id='8' is-fixed='true' name='Morning vs Day vs Evening Peak' w='33450' x='34622' y='19154'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='15394' id='16' name='Trend Line' param='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Maximum_Peak_of_Day:qk]' type-v2='filter' values='relevant' w='17868' x='80551' y='20212'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='14454' id='17' mode='checkdropdown' name='Trend Line' param='[federated.01ugzb81teuozi18h2l0z02oniyp].[yr:Date:ok]' type-v2='filter' values='database' w='17868' x='80492' y='35488'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38660' id='7' is-fixed='true' name='Trend Line' w='27651' x='1230' y='58049'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11986' id='43' mode='checkdropdown' name='Top 10 Peak Demand Days' param='[federated.01ugzb81teuozi18h2l0z02oniyp].[none:Calculation_1250432834150405:nk]' type-v2='filter' values='database' w='18102' x='80434' y='8226'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39130' id='10' is-fixed='true' name='Top 10 Peak Demand Days' w='26252' x='29813' y='58167'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39248' id='14' is-fixed='true' name='Year-wise Peak Demand' w='23054' x='56669' y='58167'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#c8f2fc' />
+                <format attr='border-style' value='dashed' />
+                <format attr='border-width' value='4' />
+                <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='1' />
+                <format attr='margin' value='8' />
+                <format attr='background-color' value='#f0f3fa' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D721F6C4-26EF-4B55-891B-B930980C7E84}' />
+    </dashboard>
+  </dashboards>
+  <windows pres-mode='true' saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Total Days Analyzed'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{233ED184-8F75-49F2-83A5-F2619744C5D4}' />
+    </window>
+    <window class='worksheet' name='Max Peak Day'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E0ED0993-C1C3-4B2E-BCC5-3D347F4A7750}' />
+    </window>
+    <window class='worksheet' name='Daily Average Peak'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{96D76212-E46D-4409-A67E-186EEB948AC0}' />
+    </window>
+    <window class='worksheet' name='Peak Difference'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{458A2812-1D52-478C-A952-916FDDEF4842}' />
+    </window>
+    <window class='worksheet' name='Peak Demand Date'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B5F43F38-7997-4E59-B52A-875553B3B6C6}' />
+    </window>
+    <window class='worksheet' name='Trend Line'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CFE81AE1-69B8-41FD-BA94-5FC532C1AA9C}' />
+    </window>
+    <window class='worksheet' name='Year-wise Peak Demand'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DEFBF519-861E-4137-9435-34246E585C35}' />
+    </window>
+    <window class='worksheet' name='Morning vs Day vs Evening Peak'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{92C95D54-9707-4EAE-ACF7-CA18A95CA5D5}' />
+    </window>
+    <window class='worksheet' name='Average Peak by Month'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.01ugzb81teuozi18h2l0z02oniyp].[mn:Date:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{74503898-0815-4573-A698-750B4D7A6DC7}' />
+    </window>
+    <window class='worksheet' name='Top 10 Peak Demand Days'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E881F659-2734-4932-879C-E41DFFE386DF}' />
+    </window>
+    <window class='worksheet' name='Peak Diff Chart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1797F875-506B-45CC-ABE5-DC603728DDFC}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Average Peak by Month'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Daily Average Peak' />
+        <viewpoint name='Max Peak Day' />
+        <viewpoint name='Morning vs Day vs Evening Peak'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Peak Demand Date' />
+        <viewpoint name='Peak Difference' />
+        <viewpoint name='Top 10 Peak Demand Days' />
+        <viewpoint name='Total Days Analyzed' />
+        <viewpoint name='Trend Line'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Year-wise Peak Demand'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='43' />
+      <simple-id uuid='{6EB708A6-615E-48EA-8D0A-6AC10713F9D0}' />
+    </window>
+  </windows>
+</workbook>
